@@ -1,13 +1,32 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@tailwind base;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@tailwind components;
+
+@tailwind utilities;
+
+body {
+    margin: 0;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  .custom-trigger {
+    transition: background-color 0.3s ease-in-out;
+  }
+  .custom-trigger--0{
+    background-color: hsl(0,100%,70%);
+  }
+  .custom-trigger--1{
+    background-color: hsl(120,100%,70%);
+  }
+  .custom-trigger--2{
+    background-color: hsl(240,100%,70%);
+  }
+  .custom-trigger--3{
+    background-color: hsl(360,100%,70%);
+  }
+  .stickyroll-content {
+    position: sticky;
+    top: 0;
+    height: 100vh;
 }
